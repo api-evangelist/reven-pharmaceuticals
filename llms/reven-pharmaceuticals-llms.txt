@@ -1,0 +1,57 @@
+# Reven Pharmaceuticals
+
+> Privately held, clinical-stage biopharmaceutical company founded in 1999 and headquartered in
+> Broomfield, Colorado. Reven develops medicines from its proprietary RJX Technology platform - a
+> patented, first-in-class intravenous composition of anti-oxidant and anti-inflammatory ingredients -
+> with programs in sepsis, multi-system inflammation, cytokine release syndrome, ARDS, and vascular,
+> oncology, CNS and ocular indications. Lead candidate Rejuveinix (RJX) completed a double-blind,
+> placebo-controlled Phase 1 dose-escalation study in healthy volunteers and received FDA clearance of an
+> Investigational New Drug application for the treatment of COVID-19.
+
+## API surface
+
+Reven Pharmaceuticals publishes **no public API**. As of 2026-08-26 there is no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL/gRPC/WSDL contract, no SDK or client package in any public
+registry, no MCP server, and no A2A agent card. Every canonical discovery path on reven.com
+(/openapi.json, /swagger.json, /api-docs, /graphql, /llms.txt, and the /.well-known/ set) returns 404.
+
+The only machine-readable endpoint on the domain is https://reven.com/wp-json/, the default WordPress
+REST API exposed by the corporate website's CMS. Its 228 routes are entirely WordPress core plus
+installed plugins (Yoast, Elementor, Wordfence, LiteSpeed, Akismet, Formidable); it describes the
+marketing site's content, not a Reven product, and is not treated here as a published company API.
+
+## Company
+
+- [Overview](https://reven.com/company/): who Reven is, founding, and mission
+- [RJX Technology](https://reven.com/rjx/): the platform behind every program
+- [Pipeline](https://reven.com/pipeline/): programs and their stage
+- [Modalities](https://reven.com/modalities/): the families of potential modalities
+- [Research & Development](https://reven.com/research/)
+- [Products](https://reven.com/products/)
+- [Clinical Trials](https://reven.com/clinical-trials/)
+- [Expanded Access](https://reven.com/expanded-access/): compassionate-use program
+- [Leadership](https://reven.com/leadership/)
+- [Social Accountability](https://reven.com/social/)
+
+## News
+
+- [News](https://reven.com/news/): company press releases
+- [Industry News](https://reven.com/industrynews/)
+- [RSS feed](https://reven.com/feed/)
+
+## Contact
+
+- [Contact Us](https://reven.com/contact-us/)
+- [Join Reven](https://reven.com/join-reven/): careers
+- [Investor Portal](https://reven.com/investor-portal/): login-gated, investors only
+- [LinkedIn](https://www.linkedin.com/company/revenpharmaceuticals)
+
+## Optional
+
+- [Secondary-market listing](https://forgeglobal.com/reven-pharmaceuticals_stock/) on Forge Global
+- [API Evangelist profile](https://apis.io/provider/reven-pharmaceuticals/)
+
+---
+generated: 2026-08-26
+method: generated
+source: apis.yml + reven.com site probe (no provider-published /llms.txt; https://reven.com/llms.txt -> 404)

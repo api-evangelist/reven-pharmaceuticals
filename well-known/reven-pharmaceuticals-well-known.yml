@@ -1,0 +1,33 @@
+generated: '2026-08-26'
+method: probed
+source: https://reven.com/.well-known/
+note: >-
+  Every canonical /.well-known/ path was probed on reven.com, the company's only public host, and every
+  one returned 404 with the WordPress theme's 404 page body. No well-known document is served, so no
+  WellKnown or SecurityTxt pointer is emitted in apis.yml - this file records a measured absence, not a
+  presence. Reven Pharmaceuticals publishes no API and no developer surface; reven.com is a WordPress
+  corporate/investor site.
+hosts:
+- host: reven.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

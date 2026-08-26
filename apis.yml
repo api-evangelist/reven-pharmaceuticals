@@ -1,7 +1,17 @@
 aid: reven-pharmaceuticals
 name: Reven Pharmaceuticals
-description: 'Reven Pharmaceuticals is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Reven Pharmaceuticals is a privately held, clinical-stage biopharmaceutical company founded in 1999 and
+  headquartered in Broomfield, Colorado. Reven develops medicines from its proprietary RJX Technology
+  platform - a patented, first-in-class intravenous composition of anti-oxidant and anti-inflammatory
+  ingredients - and is advancing candidates for sepsis, multi-system inflammation, cytokine release
+  syndrome, ARDS and vascular, oncology, CNS and ocular indications. Its lead candidate, Rejuveinix (RJX),
+  completed a double-blind, placebo-controlled Phase 1 dose-escalation study in healthy volunteers and
+  received FDA clearance of an Investigational New Drug application for the treatment of COVID-19. Reven
+  publishes a corporate and investor website at reven.com covering its pipeline, modalities, clinical
+  trials, expanded-access program and news, but operates no public developer program, API, SDK or
+  machine-readable interface of any kind.
+image: https://reven.com/wp-content/uploads/2021/12/Reven_Logo_Header-1.png
 url: https://raw.githubusercontent.com/api-evangelist/reven-pharmaceuticals/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,12 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Pharmaceuticals
+- Biotechnology
+- Life Sciences
+- Clinical Trials
+- Drug Development
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/reven-pharmaceuticals-domain-security.yml
 - type: Website
+  url: https://reven.com/
+- type: Blog
+  url: https://reven.com/news/
+- type: BlogRSS
+  url: https://reven.com/feed/
+- type: Support
+  url: https://reven.com/contact-us/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/revenpharmaceuticals
+- type: SecondaryMarket
   url: https://forgeglobal.com/reven-pharmaceuticals_stock/
+- type: LLMsTxt
+  url: llms/reven-pharmaceuticals-llms.txt
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Reven is a 15-person clinical-stage drug developer whose product is an IV pharmaceutical (RJX), not
+    software - reven.com is a WordPress corporate/investor site where every contract-discovery path 404s
+    and the only machine-readable endpoint is the CMS's own default /wp-json/ (228 WordPress core and
+    plugin routes, no Reven product).
+  evidence:
+  - url: https://reven.com/openapi.json
+    status: 404
+  - url: https://reven.com/graphql
+    status: 404
+  - url: https://reven.com/.well-known/agent-card.json
+    status: 404
+  - url: https://reven.com/llms.txt
+    status: 404
+  - url: https://reven.com/wp-json/
+    status: 200
+  checked: '2026-08-26'
