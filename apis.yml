@@ -11,6 +11,17 @@ description: >-
   publishes a corporate and investor website at reven.com covering its pipeline, modalities, clinical
   trials, expanded-access program and news, but operates no public developer program, API, SDK or
   machine-readable interface of any kind.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://reven.com/wp-content/uploads/2021/12/Reven_Logo_Header-1.png
 url: https://raw.githubusercontent.com/api-evangelist/reven-pharmaceuticals/refs/heads/main/apis.yml
 x-type: company
